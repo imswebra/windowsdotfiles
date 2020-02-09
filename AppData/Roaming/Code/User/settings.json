@@ -1,0 +1,72 @@
+{
+    // =========================================================================
+    // Main Window
+    // =========================================================================
+
+    // Window settings for bug.n
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "toggle",
+
+    // Saving Settings
+    "files.autoSave": "off",
+    "files.trimTrailingWhitespace": true,
+
+    // Other
+    "workbench.commandPalette.preserveInput": true,
+
+
+    // =========================================================================
+    // Editor
+    // =========================================================================
+
+    // Visual changes
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.fontSize": 19,
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
+
+    // Functional changes
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.multiCursorModifier": "ctrlCmd",
+
+
+    // =========================================================================
+    // Activity Bar/Sidebar
+    // =========================================================================
+
+    // Visual changes
+    "workbench.activityBar.visible": false,
+
+    // Explorer keyboard navigation
+    "workbench.list.automaticKeyboardNavigation": false,
+    "workbench.list.keyboardNavigation": "filter",
+
+    // Functional changes
+    "explorer.confirmDragAndDrop": false,
+
+
+    // =========================================================================
+    // Panel
+    // =========================================================================
+    "terminal.integrated.fontSize": 15,
+
+
+    // =========================================================================
+    // Extensions
+    // =========================================================================
+
+    // Macros
+    "macros": {
+        // Sidebar macros
+        "showAndFocusSidebar": [
+            "workbench.action.toggleSidebarVisibility",
+            "workbench.action.focusSideBar",
+        ],
+    },
+
+}
