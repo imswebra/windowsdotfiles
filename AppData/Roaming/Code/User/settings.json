@@ -21,6 +21,7 @@
 
     // Visual changes
     "workbench.colorTheme": "One Dark Pro",
+    "editor.fontFamily": "'MesloLGS NF', Consolas, 'Courier New', monospace",
     "editor.fontSize": 19,
     "editor.rulers": [
         80,
