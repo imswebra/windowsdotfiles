@@ -34,6 +34,10 @@
         "key": "ctrl+b",
         "command": "-workbench.action.toggleSidebarVisibility"
     },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenView"
+    },
     {   // Rebound and reused
         "key": "ctrl+shift+\\",
         "command": "-editor.action.jumpToBracket",
