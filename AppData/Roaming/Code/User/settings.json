@@ -21,6 +21,7 @@
 
     // Visual changes
     "workbench.colorTheme": "One Dark Pro",
+    "editor.fontFamily": "'MesloLGS NF', Consolas, 'Courier New', monospace",
     "editor.fontSize": 19,
     "editor.rulers": [
         80,
@@ -54,6 +55,32 @@
     // Panel
     // =========================================================================
     "terminal.integrated.fontSize": 15,
+
+
+    // =========================================================================
+    // Terminal
+    // =========================================================================
+    "terminal.integrated.shellArgs.linux": ["-l"],
+
+    // Colors
+    "workbench.colorCustomizations": {
+        "terminal.ansiBlack": "#282c34",
+        "terminal.ansiBlue": "#61afef",
+        "terminal.ansiCyan": "#56b6c2",
+        "terminal.ansiGreen": "#98c379",
+        "terminal.ansiMagenta": "#c678dd",
+        "terminal.ansiRed": "#e06c75",
+        "terminal.ansiWhite": "#abb2bf",
+        "terminal.ansiYellow": "#e5c07b",
+        "terminal.ansiBrightBlack": "#454c59",
+        "terminal.ansiBrightBlue": "#69bbff",
+        "terminal.ansiBrightCyan": "#66d9e8",
+        "terminal.ansiBrightGreen": "#b5e890",
+        "terminal.ansiBrightMagenta": "#e48aff",
+        "terminal.ansiBrightRed": "#ff7a85",
+        "terminal.ansiBrightWhite": "#cfd7e6",
+        "terminal.ansiBrightYellow": "#ffd68a",
+    },
 
 
     // =========================================================================
