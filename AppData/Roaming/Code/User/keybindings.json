@@ -3,19 +3,27 @@
     // Unbind Defaults
     // =========================================================================
 
-    {
-        "key": "ctrl+shift+w",
-        "command": "-workbench.action.closeWindow"
-    },
     {   // Reused
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {   // Rebound
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
     },
     {   // Reused
         "key": "ctrl+shift+`",
         "command": "-workbench.action.terminal.new"
     },
-
+    {   // Rebound and reused
+        "key": "ctrl+shift+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
     {   // Reused
         "key": "ctrl+shift+j",
         "command": "-workbench.action.search.toggleQueryDetails",
@@ -27,17 +35,12 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {   // Reused
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {   // Reused
         "key": "ctrl+shift+m",
         "command": "-workbench.actions.view.problems"
-    },
-    {   // Rebound
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
-    },
-    {   // Rebound and reused
-        "key": "ctrl+shift+\\",
-        "command": "-editor.action.jumpToBracket",
-        "when": "editorTextFocus"
     },
 
     {   // Rebound
@@ -307,17 +310,6 @@
         "key": "ctrl+shift+k",
         "when": "panelFocus",
         "command": "workbench.action.nextPanelView"
-    },
-
-
-    // =========================================================================
-    // Misc
-    // =========================================================================
-
-    {
-        "key": "ctrl+shift+m",
-        "when": "editorLangId == markdown",
-        "command": "markdown.showPreviewToSide"
     },
 
 ]
