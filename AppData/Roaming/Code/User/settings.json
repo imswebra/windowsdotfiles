@@ -10,6 +10,7 @@
     // Saving Settings
     "files.autoSave": "off",
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
 
     // Other
     "workbench.commandPalette.preserveInput": true,
