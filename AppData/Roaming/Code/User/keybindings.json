@@ -11,6 +11,11 @@
         "key": "ctrl+b",
         "command": "-workbench.action.toggleSidebarVisibility"
     },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+        "when": "inQuickOpen && inViewsPicker"
+    },
     {   // Reused
         "key": "ctrl+shift+`",
         "command": "-workbench.action.terminal.new"
