@@ -1,0 +1,118 @@
+/* Use `vivaldi --debug-packed-apps --silent-debugger-extension-api` to make the
+   browser's UI inspectable.
+ *
+ * Windows:
+ * C:\Program` Files\Vivaldi\Application\vivaldi.exe `
+   --debug-packed-apps --silent-debugger-extension-api */
+
+
+/* ========================================================================== *
+ * one-dark Theme
+ * ========================================================================== */
+/* Background: #21252b
+ * Foreground: #abb2bf
+ * Highlight: #61afef
+ * Accent: #282c34
+ * Apply Accent Color to Window: False */
+
+/* Override colors */
+body {
+    --colorBgLightIntense: var(--colorAccentBg) !important;
+}
+
+/* Change hover background color from darker tints to a lighter tint */
+.color-behind-tabs-off .toolbar-mainbar > .button-toolbar > button:hover {
+    background-color: var(--colorAccentBgFaded);
+}
+.bookmark-bar button:hover:not(.menubar) {
+    background-color: var(--colorAccentBgFaded) !important;
+}
+.tab-position .tab:hover:not(.active) {
+    background-color: var(--colorAccentBgFaded);
+}
+#switch > button:hover:not(.active) { /* Buttons in panel */
+    background-color: var(--colorAccentBgFaded) !important;
+}
+
+/* Make main toolbar visually seemless */
+.toolbar-mainbar {
+    background: var(--colorBg) !important;
+}
+.toolbar-mainbar:after {
+    display: none;
+}
+
+/* Disable address bar highlighting */
+.addressfield:focus-within, .searchfield:focus-within {
+    border-color: var(--colorBgIntenser);
+    box-shadow: none;
+}
+
+/* Remove HTTP/HTTPS symbol background */
+.SiteInfoButton {
+    background-color: transparent !important;
+}
+
+/* Make bookmarks bar visually seemless */
+.bookmark-bar {
+    background-color: var(--colorBg);
+    border-bottom-width: 0px !important;
+}
+.bookmark-bar button {
+    background-color: var(--colorBg) !important;
+}
+
+/* Fix web panel button background */
+button.webviewbtn img {
+    background-color:transparent !important;
+}
+
+/* Fix speed dial background color */
+.dials .dial .thumbnail-image {
+    background-color: var(--colorBg);
+}
+
+
+/* ========================================================================== *
+ * Tabs Below Address Bar
+ * ========================================================================== */
+/* Modified from https://forum.vivaldi.net/topic/15834/tabs-on-bottom-for-1-8/
+ * "Tab bar position" must be set to "Bottom" (vivaldi://settings/tabs/)
+     * Makes tab bar child of `main` div instead of `header` div
+ * Assumes "Show Tab Thumbnails" is disabled (vivaldi://settings/tabs/), but the
+   CSS selectors can be modified to handle this setting
+ * Makes no attempt to fix the popup thumbnails when "Show Popup Thumbnails" is
+   enabled (vivaldi://settings/tabs/) as they don't have a unique ID or unique
+   class to target. */
+
+/* Set element order */
+.toolbar.toolbar-addressbar {
+    order: -3;
+}
+.bookmark-bar {
+    order: -2;
+}
+#tabs-container.bottom {
+    order: -1;
+    border-top: none;
+}
+
+/* Hide the header */
+#header {
+    display: none;
+}
+
+
+/* ========================================================================== *
+ * Auto-hide Address Bar
+ * ========================================================================== */
+.toolbar-addressbar {
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+}
+.toolbar-addressbar:focus-within,
+.toolbar-addressbar:hover,
+.toolbar-addressbar:focus {
+    transform: translateY(0%);
+}
