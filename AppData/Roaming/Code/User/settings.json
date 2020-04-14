@@ -102,6 +102,6 @@
 
     // Render Line Endings
     "code-eol.newlineCharacter": "¬",
-    "code-eol.returnCharacter" : "¤",
-    "code-eol.crlfCharacter"   : "¤¬",
+    "code-eol.returnCharacter": "¤",
+    "code-eol.crlfCharacter": "¤¬",
 }
