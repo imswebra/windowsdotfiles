@@ -31,6 +31,7 @@
     ],
     "breadcrumbs.enabled": false,
     "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
     "editor.renderIndentGuides": false,
 
     // Functional changes
@@ -98,4 +99,8 @@
         ],
     },
 
+    // Render Line Endings
+    "code-eol.newlineCharacter": "¬",
+    "code-eol.returnCharacter" : "¤",
+    "code-eol.crlfCharacter"   : "¤¬",
 }
