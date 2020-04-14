@@ -12,6 +12,7 @@
     "files.trimTrailingWhitespace": true,
     "editor.trimAutoWhitespace": true,
     "files.insertFinalNewline": true,
+    "remote.WSL.fileWatcher.polling": true, // Not needed for WSL 2
 
     // Other
     "workbench.commandPalette.preserveInput": true,
