@@ -4,12 +4,10 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "globals": {
-        "requestedTheme": "dark", // Windows dark theme
-        "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}", // WSL
-        "showTabsInTitlebar" : false,
-        "alwaysShowTabs": false
-    },
+    "theme": "dark", // Windows dark theme
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}", // WSL
+    "showTabsInTitlebar" : false,
+    "alwaysShowTabs": false,
 
     "profiles": {
         "defaults": {
