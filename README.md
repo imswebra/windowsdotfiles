@@ -1,7 +1,7 @@
 # Windows "*dotfiles*"
 My Windows "*dotfiles*" managed using a [bare git repository](https://www.atlassian.com/git/tutorials/dotfiles).
 
-Any color styling is pulls from the [one-dark](https://github.com/atom/one-dark-syntax) theme for the base colors, and [this comment](https://github.com/platformio/platformio-atom-ide-terminal/issues/30#issuecomment-392439370) for the bright variants:
+Any color styling is pulled from the [one-dark](https://github.com/atom/one-dark-syntax) theme for the base colors, and [this comment](https://github.com/platformio/platformio-atom-ide-terminal/issues/30#issuecomment-392439370) for the bright variants:
 ```
 Black: #282c34
 Blue: #61afef
