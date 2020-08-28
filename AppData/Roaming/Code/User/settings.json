@@ -12,7 +12,11 @@
     "files.trimTrailingWhitespace": true,
     "editor.trimAutoWhitespace": true,
     "files.insertFinalNewline": true,
-    "remote.WSL.fileWatcher.polling": true, // Not needed for WSL 2
+
+    // Smooth Scrolling
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
 
     // Other
     "workbench.commandPalette.preserveInput": true,
@@ -25,12 +29,12 @@
     // Visual changes
     "workbench.colorTheme": "One Dark Pro",
     "editor.fontFamily": "'MesloLGS NF', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 18,
+    "editor.fontSize": 14,
     "editor.rulers": [
         80,
         100
     ],
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
     "editor.renderIndentGuides": false,
@@ -91,7 +95,18 @@
     // Extensions
     // =========================================================================
 
-    // Macros
+    // Extension list
+    /*
+        One Dark Pro (zhuangtongfa.material-theme)
+        colorize (kamikillerto.vscode-colorize)
+        macro-commander (jeff-hykin.macro-commander)
+        Rewrap (stkb.rewrap)
+        Render Line Endings (medo64.render-crlf)
+        Live Share (MS-vsliveshare.vsliveshare)
+    */
+
+
+    // macro-commander
     "macros": {
         // Sidebar macros
         "showAndFocusSidebar": [
